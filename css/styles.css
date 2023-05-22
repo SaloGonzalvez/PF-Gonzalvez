@@ -2,15 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
     font-family: owners-wide, sans-serif;
+    color: black;
     background: rgb(243, 242, 255);
     background: linear-gradient(87deg, rgba(243, 242, 255, 1) 0%, rgba(234, 235, 236, 1) 100%);
 }
 
-
+.title{
+    margin: 30px auto;
+    font-weight: 700;
+    font-size: 2.6rem;
+    text-align: center;
+}
 
 /* _______INDEX____________ */
 /* ------ header --------- */
@@ -210,6 +217,7 @@ header {
 
 .textocreacion h2 {
     font-size: 1.9rem;
+    font-weight: 500;
     text-transform: capitalize;
     text-align: center;
 }
@@ -302,22 +310,27 @@ footer {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
 }
 
-footer h5 {
+
+.footer-partone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-partone h5 {
     font-size: 1.9rem;
     font-weight: 600;
     margin: 0px;
 }
 
-footer p {
-    width: 450px;
+.footer-partone p {
+    width: 75vw;
+    
     font-size: 1rem;
-}
-
-.footer-partone{
-    display: flex;
-    flex-direction: column;
 }
 
 
@@ -338,9 +351,9 @@ footer p {
 
 
 .footer-link{
-
+    justify-self: center;
     align-self: center;
-    width: 70%;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
