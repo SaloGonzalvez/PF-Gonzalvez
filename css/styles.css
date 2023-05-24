@@ -17,6 +17,7 @@ body {
     font-weight: 700;
     font-size: 2.6rem;
     text-align: center;
+    color: #F7931E;
 }
 
 /* _______INDEX____________ */
@@ -34,16 +35,20 @@ body {
     background: linear-gradient(87deg, rgba(60, 49, 225, 1) 0%, rgba(0, 113, 188, 1) 100%);
 }
 
-
+.color-white{
+    color: white;
+}
 
 /* ----- portada --------- */
 
 .principal {
     background: rgb(60, 49, 225);
     background: linear-gradient(87deg, rgba(60, 49, 225, 1) 0%, rgba(0, 113, 188, 1) 100%);
-    color: white;
+    color: #ffffff;
     width: 100vw;
     height: 100vh;
+
+
 
     /* background-image: url(../img/fondo.png);
     background-position: center;
@@ -158,34 +163,46 @@ body {
     margin: 40px auto;
 }
 
-.textimage {
-    margin: 50px 150px;
+.card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: rgb(60, 49, 225);
+    background: linear-gradient(87deg, rgba(60, 49, 225, 1) 0%, rgba(0, 113, 188, 1) 100%);
+    padding: 30px;
+    margin: 50px 100px;
+    border-radius: 30px;
     gap: 20px;
 }
 
-.textimage .foto{
+.card .foto{
     width: 300px;
     height: 300px;
 }
 
-.textocreacion{
+.card__text{
     justify-self: center;
     align-self: center ;
+    color: white;
+}
+
+.card__text hr{
+    border: none;
+    height: 5px;
+    color: white;
+    background-color: white;
 }
 
 
-.textocreacion h2 {
+.card__text h2 {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 550;
     text-transform: capitalize;
     text-align: center;
 }
 
-.textocreacion p {
+.card__text p {
     width: 300px;
     font-size: 1rem;
     text-align: center;
@@ -193,31 +210,33 @@ body {
 }
 
 @media (min-width:1024px) {
-    .textimage {
+    .card {
 
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: end;
     }
 
-    .textimage .foto{
+    .card .foto{
         width: 500px;
-        height: 500px;
+        height: 400px;
     }
     
     
 
-    .textocreacion {
+    .card__text {
         gap: 20px;
     }
 
-    .textocreacion h2 {
+    
+
+    .card__text h2 {
         text-align: left;
         align-self: baseline;
 
     }
 
-    .textocreacion p {
+    .card__text p {
         text-align: left;
         width: 450px;
 
@@ -269,7 +288,8 @@ body {
 /* -------- footer ---------- */
 
 footer {
-    background-color: #0071BC;
+    background: rgb(60, 49, 225);
+    background: linear-gradient(120deg, rgba(60, 49, 225, 1) 0%, rgba(0, 113, 188, 1) 100%);
     color: white;
     padding: 20px;
     display: flex;
