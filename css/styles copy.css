@@ -1,0 +1,586 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: owners-wide, sans-serif;
+    color: black;
+    background: rgb(243, 242, 255);
+    background: linear-gradient(87deg, rgba(243, 242, 255, 1) 0%, rgba(234, 235, 236, 1) 100%);
+}
+
+.title{
+    margin: 30px auto;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    color: #F7931E;
+}
+
+/* _______INDEX____________ */
+/* ------ header --------- */
+
+.logo {
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    
+}
+
+.bg-gradient-blue{
+    background: rgb(60, 49, 225);
+    background: linear-gradient(87deg, rgba(60, 49, 225, 1) 0%, rgba(0, 113, 188, 1) 100%);
+}
+
+.color-white{
+    color: white;
+}
+
+/* ----- portada --------- */
+
+.principal {
+    background: rgb(60, 49, 225);
+    background: linear-gradient(87deg, rgba(60, 49, 225, 1) 0%, rgba(0, 113, 188, 1) 100%);
+    color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+
+
+
+    /* background-image: url(../img/fondo.png);
+    background-position: center;
+    background-size: cover; */
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.texto-central {
+    padding: 210px 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.texto-central h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.texto-central p {
+    text-align: center;
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+/* ------- texto introductorio -------- */
+
+.texto-introductorio {
+    position: relative;
+}
+
+
+.always {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.always h3 {
+    font-size: 3rem;
+    font-style: oblique;
+    color: #F7931E;
+    font-family: owners-wide, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    margin: 40px;
+}
+
+
+
+.always p {
+    font-size: 1.125rem;
+    width: 60vw;
+    height: auto;
+    margin: auto;
+    margin-top: -20px;
+    font-family: owners-wide, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.foto {
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    background-color: #F7931E;
+
+}
+
+.circle {
+    background-color: #F7931E;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+
+    position: absolute;
+    top: 100px;
+    left: -100px;
+    filter: blur(6px);
+}
+
+/* ------ resumen de trabajos ------- */
+.creaciones h3 {
+    color: #F7931E;
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: owners-wide, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 40px auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(60, 49, 225);
+    background: linear-gradient(87deg, rgba(60, 49, 225, 1) 0%, rgba(0, 113, 188, 1) 100%);
+    padding: 20px;
+    margin: 40px 30px;
+    border-radius: 30px;
+    gap: 20px;
+}
+
+.card .foto{
+    width: 300px;
+    height: 300px;
+}
+
+.card__text{
+    justify-self: center;
+    align-self: center ;
+    color: white;
+}
+
+.card__text hr{
+    border: none;
+    height: 5px;
+    color: white;
+    background-color: white;
+}
+
+
+.card__text h2 {
+    font-size: 2rem;
+    font-weight: 550;
+
+    text-align: center;
+}
+
+.card__text p {
+    width: 300px;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+@media (min-width:1024px) {
+    .card {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: end;
+        margin: 40px 100px;
+    }
+
+    .card .foto{
+        width: 600px;
+        height: 400px;
+    }
+    
+    
+
+    .card__text {
+        gap: 20px;
+    }
+
+    
+
+    .card__text h2 {
+        text-align: left;
+        align-self: baseline;
+
+    }
+
+    .card__text p {
+        text-align: left;
+        width: 450px;
+
+    }
+}
+
+/* ------- pantalla de contacto ------- */
+
+.pantalla-contacto {
+    background: rgb(251,206,22);
+    background: linear-gradient(108deg, rgba(251,206,22,1) 0%, rgba(255,154,0,1) 100%);
+    padding: 100px 50px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pantalla-contacto h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px;
+    color: white;
+}
+
+.contacto {
+    margin: auto;
+
+}
+
+.presiona {
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 1.5rem;
+    width: 40vw;
+    margin: auto;
+
+}
+
+.presiona a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+
+/* -------- footer ---------- */
+
+footer {
+    background: rgb(60, 49, 225);
+    background: linear-gradient(120deg, rgba(60, 49, 225, 1) 0%, rgba(0, 113, 188, 1) 100%);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+
+.footer-partone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-partone h5 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.footer-partone p {
+    width: 75vw;
+    
+    font-size: 1rem;
+}
+
+
+.socialmedia{
+    align-self: center;
+}
+
+.socialmedia a {
+    
+    background-color: #F7931E;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
+.footer-link{
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items :center ;
+    
+
+}
+
+.footer-inicio{
+    grid-column: 2;
+    grid-row:2;
+}
+
+.footer-about{
+    grid-column: 1;
+    grid-row:1;
+}
+
+.footer-skills{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.footer-portfolio{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.footer-contacto{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.footer-link a {
+    color: white;
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* -----ABOUT.HTML --------- */
+
+.about__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 100px;
+    border-radius: 30px;
+    gap: 20px;
+}
+
+.about__card .foto{
+    width: 300px;
+    height: 300px;
+}
+
+.about__text{
+    justify-self: center;
+    align-self: center ;
+    color: rgb(0, 0, 0);
+}
+
+.about_text hr{
+    border: none;
+    height: 5px;
+    color: white;
+    background-color: white;
+}
+
+
+.about__text h2 {
+    font-size: 1.6rem;
+    font-weight: 530;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.about__text p {
+    width: 300px;
+    font-size: .8rem;
+    text-align: center;
+
+}
+
+@media (min-width:1024px) {
+    .about__card {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .about__card .foto{
+        width: 600px;
+        height: 600px;
+    }
+    
+    .about__text{
+        align-self: baseline;
+    }
+
+    .about__text h2 {
+        text-align: left;
+        align-self:baseline;
+
+    }
+
+    .about__text p {
+        text-align: left;
+        align-self: baseline;
+        width: 450px;
+
+    }
+}
+
+
+
+
+
+/* ------- SKILLS.HTML ------- */
+
+.habilidades__title {
+    font-size: 2.2rem;
+    font-style: italic;
+    text-align: center;
+    margin: 25px;
+}
+
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    gap: 30px;
+    margin: 20px;
+}
+
+
+.habilidad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: rgb(251,206,22);
+    background: linear-gradient(128deg, rgba(251,206,22,1) 0%, rgba(255,154,0,1) 100%);
+    width: 85vw;
+    height: 280px;
+    border-radius: 20px;
+}
+
+
+.habilidad__title {
+
+    text-align: center;
+    font-size: 1.3rem;
+    font-style: oblique;
+    font-weight: 500;
+}
+
+.habilidad__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.icon {
+    background-color: whitesmoke;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+
+@media (min-width:1024px){
+
+    .habilidades {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    
+        /* gap: 30px; */
+        /* margin: 20px; */
+    }
+
+    .habilidad {
+        background-color: #F7931E;
+        width: 500px;
+        height: 280px;
+        border-radius: 20px;
+    }
+
+}
+
+/* ----------- CONTACTO.HTML ------------ */
+/* ------ informacion de contacto ----- */
+
+.aboutform {
+
+    margin: 100px 70px;
+    display: flex;
+}
+
+
+.contactinfo {
+
+    background-color: #F7931E;
+    border-radius: 20px;
+    padding: 20px;
+    height: 350px;
+    width: 30vw;
+}
+
+.contactform {
+    background-color: #88c3ea;
+    padding: 20px;
+    height: 350px;
+    width: 60vw;
+}
+
+.details {
+
+    padding: 10px;
+
+}
+
+.details input {
+    border-radius: 10px;
+    height: 25px;
+}
