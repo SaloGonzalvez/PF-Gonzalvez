@@ -335,3 +335,235 @@ footer{
     grid-column: 3;
     grid-row: 3;
 }
+
+
+/*------------------------------*/ 
+
+.about__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 100px;
+    border-radius: 30px;
+    gap: 20px;
+
+    & .foto{
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+.about__text{
+    justify-self: center;
+    align-self: center ;
+    color: rgb(0, 0, 0);
+
+    & hr{
+        border: none;
+        height: 5px;
+        color: $color-white;
+        background-color: $color-white;
+    }
+
+    & h2{
+        font-size: 1.6rem;
+        font-weight: 530;
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    & p{
+        width: 300px;
+        font-size: .8rem;
+        text-align: center;
+    }
+}
+
+@media (min-width:1024px){
+    .about__card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    
+        & .foto{
+            width: 600px;
+            height: 600px;
+        }
+    
+    }
+    
+    .about__text{
+        align-self: baseline;
+    
+        & h2{
+            text-align: left;
+            align-self: baseline;
+        }
+    
+        & p{
+            text-align: left;
+            align-self: baseline;
+            width: 450px;
+        }
+    }
+}
+
+/*---------- SKILLS.HTML ----------*/
+
+.habilidades__title {
+    font-size: 2.2rem;
+    font-style: italic;
+    text-align: center;
+    margin: 25px;
+}
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+}
+
+.habilidad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: rgb(251,206,22);
+    background: linear-gradient(128deg, rgba(251,206,22,1) 0%, rgba(255,154,0,1) 100%);
+    width: 85vw;
+    height: 280px;
+    border-radius: 20px;
+
+    &__title{
+        text-align: center;
+        font-size: 1.3rem;
+        font-style: oblique;
+        font-weight: 500;
+    }
+
+    &__icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    &__icon{
+        background-color: whitesmoke;
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        margin: 10px;
+    }
+}
+
+@media (min-width:1024px){
+    .habilidades {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    
+        /* gap: 30px; */
+        /* margin: 20px; */
+    }
+
+    .habilidad {
+        background-color: #F7931E;
+        width: 500px;
+        height: 280px;
+        border-radius: 20px;
+    }
+}
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.trabajo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+    background: rgb(60, 49, 225);
+    background: linear-gradient(120deg, rgba(60, 49, 225, 1) 0%, rgba(0, 113, 188, 1) 100%);
+    -webkit-box-shadow: 0px 4px 26px -14px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 4px 26px -14px rgba(0,0,0,1);
+    box-shadow: 0px 4px 26px -14px rgba(0,0,0,1);
+
+    & .foto{
+        background-color: rgb(157, 206, 248);
+        width: 100%;
+        height: 300px;
+        border-radius: 0;
+    }
+
+    &__categoria{
+        margin: 10px;
+        background-color: $color-1;
+        padding: 5px 20px;
+        border-radius: 20px;
+    }
+
+    &__title{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    &__text{
+        text-align: center;
+        width: 80vw;
+        padding: 10px;
+    }
+
+}
+
+@media (min-width:768px){
+
+    .portfolio{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .trabajo{
+        width: 50vw;
+
+        &__text{
+            text-align: center;
+            width: 30vw;
+            padding: 10px;
+        }
+    }
+
+}
+
+@media (min-width:1024px){
+
+    .portfolio{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .trabajo{
+        width: 30vw;
+
+        &__text{
+            text-align: center;
+            width: 30vw;
+            padding: 10px;
+        }
+    }
+}
