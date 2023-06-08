@@ -93,9 +93,9 @@ body {
 
 .fotos {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 40px;
 }
 
@@ -132,7 +132,7 @@ body {
   justify-content: center;
   align-items: center;
   background: rgb(60, 49, 225);
-  background: linear-gradient(87deg, rgb(60, 49, 225) 0%, rgb(0, 113, 188) 100%);
+  background: linear-gradient(128deg, rgb(60, 49, 225) 0%, rgb(0, 113, 188) 100%);
   padding: 20px;
   margin: 40px 30px;
   border-radius: 30px;
@@ -189,7 +189,7 @@ body {
 }
 .pantalla-contacto {
   background: rgb(251, 206, 22);
-  background: linear-gradient(108deg, rgb(251, 206, 22) 0%, rgb(255, 154, 0) 100%);
+  background: linear-gradient(128deg, rgb(251, 206, 22) 0%, rgb(255, 154, 0) 100%);
   padding: 100px 50px;
   text-align: center;
   height: 100vh;
@@ -419,7 +419,8 @@ footer {
     /* margin: 20px; */
   }
   .habilidad {
-    background-color: #F7931E;
+    background: rgb(251, 206, 22);
+    background: linear-gradient(128deg, rgb(251, 206, 22) 0%, rgb(255, 154, 0) 100%);
     width: 500px;
     height: 280px;
     border-radius: 20px;
@@ -436,8 +437,9 @@ footer {
   justify-content: center;
   align-items: center;
   margin: 20px;
+  border-radius: 20px;
   background: rgb(60, 49, 225);
-  background: linear-gradient(120deg, rgb(60, 49, 225) 0%, rgb(0, 113, 188) 100%);
+  background: linear-gradient(90deg, rgb(60, 49, 225) 0%, rgb(0, 113, 188) 100%);
   -webkit-box-shadow: 0px 4px 26px -14px rgb(0, 0, 0);
   -moz-box-shadow: 0px 4px 26px -14px rgb(0, 0, 0);
   box-shadow: 0px 4px 26px -14px rgb(0, 0, 0);
@@ -446,7 +448,7 @@ footer {
   background-color: rgb(157, 206, 248);
   width: 100%;
   height: 300px;
-  border-radius: 0;
+  border-radius: 20px;
 }
 .trabajo__categoria {
   margin: 10px;
@@ -495,6 +497,81 @@ footer {
     width: 30vw;
     padding: 10px;
   }
+}
+.contacto__titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contacto__titulo p {
+  font-size: 1.15rem;
+  margin-top: -30px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+.form__info {
+  width: 100%;
+  padding: 20px 30px;
+  background: rgb(251, 206, 22);
+  background: linear-gradient(45deg, rgb(251, 206, 22) 0%, rgb(255, 154, 0) 100%);
+}
+.form__info__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form__info__text {
+  font-weight: 400;
+  font-size: 1.15rem;
+}
+.form__contacto {
+  width: 100%;
+  padding: 20px 30px;
+  background-color: rgb(75, 75, 238);
+}
+.form__enviar {
+  width: 100%;
+  padding: 10px 20px;
+  border-style: hidden;
+  border-radius: 10px;
+}
+
+.details {
+  margin: 30px 0;
+}
+.details input, .details label {
+  display: block;
+  width: 100%;
+}
+.details label {
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+}
+.details input {
+  height: 40px;
+  border-radius: 5px;
+  border-style: hidden;
+}
+.details textarea {
+  width: 100%;
+  height: 20vh;
+}
+.details__radio {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin: 20px 0;
+}
+.details__radio input[type=radio] {
+  height: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */

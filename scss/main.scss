@@ -14,6 +14,22 @@ body{
 $color-1:#F7931E;
 $color-white:white;
 
+@mixin flex__center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin orange__gradient($deg){
+    background: rgb(251,206,22);
+    background: linear-gradient($deg, rgba(251,206,22,1) 0%, rgba(255,154,0,1) 100%);
+}
+
+@mixin blue__gradient($deg){
+    background: rgb(60, 49, 225);
+    background: linear-gradient($deg, rgba(60, 49, 225, 1) 0%, rgba(0, 113, 188, 1) 100%);
+}
+
 .logo {
     width: 100px;
     height: 40px;
@@ -22,8 +38,7 @@ $color-white:white;
 }
 
 .bg-gradient-blue{
-    background: rgb(60, 49, 225);
-    background: linear-gradient(87deg, rgba(60, 49, 225, 1) 0%, rgba(0, 113, 188, 1) 100%);
+    @include blue__gradient(87deg);
 }
 
 
@@ -38,14 +53,11 @@ $color-white:white;
 
 
 .principal{
-    background: rgb(60, 49, 225);
-    background: linear-gradient(87deg, rgba(60, 49, 225, 1) 0%, rgba(0, 113, 188, 1) 100%);
+    @include blue__gradient(87deg);
     color: $color-white;
     width: 100vw;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex__center();
 
 }
 
@@ -108,10 +120,8 @@ $color-white:white;
 }
 
 .fotos{
-    display: flex;
+    @include flex__center();
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     gap: 40px;
 }
 
@@ -150,8 +160,7 @@ $color-white:white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(60, 49, 225);
-    background: linear-gradient(87deg, rgba(60, 49, 225, 1) 0%, rgba(0, 113, 188, 1) 100%);
+    @include blue__gradient(128deg);
     padding: 20px;
     margin: 40px 30px;
     border-radius: 30px;
@@ -164,7 +173,7 @@ $color-white:white;
 
     &__text{
         justify-self: center;
-        align-self: center ;
+        align-self: center;
         color: $color-white;
 
         & hr{
@@ -184,6 +193,7 @@ $color-white:white;
             width: 300px;
             font-size: 1rem;
             text-align: center;
+            
         }
     }
 }
@@ -217,14 +227,11 @@ $color-white:white;
 }
 
 .pantalla-contacto{
-    background: rgb(251,206,22);
-    background: linear-gradient(108deg, rgba(251,206,22,1) 0%, rgba(255,154,0,1) 100%);
+    @include orange__gradient(128deg);
     padding: 100px 50px;
     text-align: center;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex__center();
 
     & h3{
         font-size: 2.5rem;
@@ -254,8 +261,7 @@ $color-white:white;
 }
 
 footer{
-    background: rgb(60, 49, 225);
-    background: linear-gradient(120deg, rgba(60, 49, 225, 1) 0%, rgba(0, 113, 188, 1) 100%);
+    @include blue__gradient(120deg);
     color: white;
     padding: 20px;
     display: flex;
@@ -433,8 +439,7 @@ footer{
     justify-content: center;
     align-items: center;
 
-    background: rgb(251,206,22);
-    background: linear-gradient(128deg, rgba(251,206,22,1) 0%, rgba(255,154,0,1) 100%);
+    @include orange__gradient(128deg);
     width: 85vw;
     height: 280px;
     border-radius: 20px;
@@ -447,9 +452,7 @@ footer{
     }
 
     &__icons{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex__center();
         margin-top: 20px;
     }
 
@@ -475,7 +478,7 @@ footer{
     }
 
     .habilidad {
-        background-color: #F7931E;
+        @include orange__gradient(128deg);
         width: 500px;
         height: 280px;
         border-radius: 20px;
@@ -494,8 +497,8 @@ footer{
     justify-content: center;
     align-items: center;
     margin:20px;
-    background: rgb(60, 49, 225);
-    background: linear-gradient(120deg, rgba(60, 49, 225, 1) 0%, rgba(0, 113, 188, 1) 100%);
+    border-radius: 20px;
+    @include blue__gradient(90deg);
     -webkit-box-shadow: 0px 4px 26px -14px rgba(0,0,0,1);
     -moz-box-shadow: 0px 4px 26px -14px rgba(0,0,0,1);
     box-shadow: 0px 4px 26px -14px rgba(0,0,0,1);
@@ -504,7 +507,7 @@ footer{
         background-color: rgb(157, 206, 248);
         width: 100%;
         height: 300px;
-        border-radius: 0;
+        border-radius: 20px;
     }
 
     &__categoria{
@@ -567,3 +570,92 @@ footer{
         }
     }
 }
+
+
+.contacto__titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & p{
+        font-size: 1.15rem;
+        margin-top: -30px;
+    }
+}
+
+.form{
+    @include flex__center();
+    flex-direction: column;
+    padding: 10px 20px;
+
+    &__info{
+        width:100%;
+        padding: 20px 30px;
+        @include orange__gradient(45deg);
+
+        &__title{
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        &__text{
+            font-weight: 400;
+            font-size: 1.15rem;
+            
+        }
+    }
+
+    &__contacto{
+        width: 100%;
+        padding: 20px 30px;
+        background-color: rgb(75, 75, 238);
+    }
+
+    &__enviar{
+        width: 100%;
+        padding: 10px 20px;
+        border-style: hidden;
+        border-radius: 10px;
+    }
+}
+
+
+.details{
+    margin: 30px 0;
+    & input, label{
+        display: block;
+        width: 100%;
+        
+    }
+
+    & label{
+        font-size: 1.15rem;
+        margin-bottom: 6px;
+    }
+
+    & input{
+        height: 40px;
+        border-radius: 5px;
+        border-style: hidden;
+    }
+
+    & textarea{
+        width: 100%;
+        height: 20vh;
+    }
+
+    &__radio{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        margin: 20px 0;
+
+        & input[type="radio"]{
+            height: 30px;
+        }
+    }
+}
+
