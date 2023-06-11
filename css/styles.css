@@ -11,6 +11,14 @@ body {
   background: linear-gradient(87deg, rgb(243, 242, 255) 0%, rgb(234, 235, 236) 100%);
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 .logo {
   width: 100px;
   height: 40px;
@@ -35,63 +43,8 @@ body {
   color: #F7931E;
 }
 
-.principal {
-  background: rgb(60, 49, 225);
-  background: linear-gradient(87deg, rgb(60, 49, 225) 0%, rgb(0, 113, 188) 100%);
-  color: white;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.texto-central {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-.texto-central h1 {
-  font-size: 5rem;
-  font-weight: 600;
-  font-style: oblique;
-  margin: 10px auto;
-  text-align: center;
-}
-.texto-central p {
-  margin: 10px;
-  font-size: 1.2rem;
-}
-
-.texto-introductorio {
-  position: relative;
-}
-
-.always {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  text-align: center;
-  margin-top: 80px;
-  margin-bottom: 30px;
-  gap: 20px;
-}
-.always h2 {
-  font-size: 3.2rem;
-  color: #F7931E;
-  font-weight: 600;
-}
-.always p {
-  font-size: 1.125rem;
-  width: 60vw;
-  font-weight: 450;
-  font-style: normal;
-}
-
 .button {
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-decoration: none;
   color: white;
   padding: 10px 30px;
@@ -100,41 +53,15 @@ body {
   justify-self: center;
   background: rgb(251, 206, 22);
   background: linear-gradient(35deg, rgb(251, 206, 22) 0%, rgb(255, 154, 0) 100%);
+  transition: 1s;
+}
+.button .blue {
+  background: rgb(60, 49, 225);
+  background: linear-gradient(35deg, rgb(60, 49, 225) 0%, rgb(0, 113, 188) 100%);
 }
 
-.fotos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.foto {
-  height: 200px;
-  width: 200px;
-  border-radius: 15px;
-  background-color: #F7931E;
-}
-
-.circle {
-  background-color: #F7931E;
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  position: absolute;
-  top: 100px;
-  left: -100px;
-  filter: blur(6px);
-}
-
-.creaciones h2 {
-  color: #F7931E;
-  text-align: center;
-  font-size: 3.2rem;
-  font-weight: 700;
-  font-style: normal;
-  margin: 40px auto;
+.button:hover {
+  transform: scale(1.1);
 }
 
 .card {
@@ -148,6 +75,9 @@ body {
   margin: 40px 30px;
   border-radius: 30px;
   gap: 20px;
+  -webkit-box-shadow: 3px 13px 47px -22px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 13px 47px -22px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 13px 47px -22px rgba(0, 0, 0, 0.75);
 }
 .card .foto {
   width: 300px;
@@ -178,11 +108,12 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: end;
-    margin: 50px 120px;
+    width: 75vw;
+    margin: 50px 100px;
     gap: 20px;
   }
   .creaciones .card .foto {
-    width: 600px;
+    width: 400px;
     height: 400px;
   }
   .creaciones .card__text {
@@ -201,42 +132,6 @@ body {
     grid-row: 2;
   }
 }
-.pantalla-contacto {
-  background: rgb(251, 206, 22);
-  background: linear-gradient(128deg, rgb(251, 206, 22) 0%, rgb(255, 154, 0) 100%);
-  padding: 100px 50px;
-  text-align: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.pantalla-contacto h3 {
-  font-size: 2.25rem;
-  text-align: center;
-  font-weight: 600;
-  margin: 20px;
-  color: white;
-}
-
-.contacto {
-  margin: auto;
-}
-
-.presiona {
-  background-color: white;
-  border-radius: 30px;
-  padding: 10px;
-  font-size: 1.5rem;
-  width: 60vw;
-  margin: auto;
-}
-.presiona a {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-}
-
 footer {
   background: rgb(60, 49, 225);
   background: linear-gradient(120deg, rgb(60, 49, 225) 0%, rgb(0, 113, 188) 100%);
@@ -315,7 +210,161 @@ footer {
   grid-row: 3;
 }
 
-/*------------------------------*/
+.habilidad {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(60, 49, 225);
+  background: linear-gradient(128deg, rgb(60, 49, 225) 0%, rgb(0, 113, 188) 100%);
+  width: 85vw;
+  height: 280px;
+  border-radius: 20px;
+}
+.habilidad__title {
+  text-align: center;
+  font-size: 1.3rem;
+  font-style: oblique;
+  font-weight: 500;
+  color: white;
+}
+.habilidad__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.habilidad__icon {
+  background-color: whitesmoke;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  margin: 10px;
+  padding: 10px;
+  object-fit: contain;
+}
+
+.foto {
+  height: 200px;
+  width: 200px;
+  border-radius: 15px;
+  background-color: #F7931E;
+}
+
+.principal {
+  background: rgb(60, 49, 225);
+  background: linear-gradient(87deg, rgb(60, 49, 225) 0%, rgb(0, 113, 188) 100%);
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-central {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.texto-central h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  font-style: oblique;
+  margin: 10px auto;
+  text-align: center;
+}
+.texto-central p {
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+.texto-introductorio {
+  position: relative;
+}
+
+.always {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+.always h2 {
+  font-size: 3.2rem;
+  color: #F7931E;
+  font-weight: 600;
+}
+.always p {
+  font-size: 1.125rem;
+  width: 60vw;
+  font-weight: 450;
+  font-style: normal;
+}
+
+.fotos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.foto {
+  height: 200px;
+  width: 200px;
+  border-radius: 15px;
+  background-color: #F7931E;
+}
+
+.circle {
+  background-color: #F7931E;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  position: absolute;
+  top: 100px;
+  left: -100px;
+  filter: blur(6px);
+}
+
+.creaciones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.creaciones h2 {
+  color: #F7931E;
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 700;
+  font-style: normal;
+  margin: 40px auto;
+}
+
+.pantalla-contacto {
+  background: rgb(251, 206, 22);
+  background: linear-gradient(128deg, rgb(251, 206, 22) 0%, rgb(255, 154, 0) 100%);
+  padding: 100px 50px;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pantalla-contacto h3 {
+  font-size: 2.25rem;
+  text-align: center;
+  font-weight: 600;
+  margin: 20px;
+  color: white;
+}
+
 .about__card {
   display: flex;
   flex-direction: column;
@@ -377,52 +426,12 @@ footer {
     width: 450px;
   }
 }
-/*---------- SKILLS.HTML ----------*/
-.habilidades__title {
-  font-size: 2.2rem;
-  font-style: italic;
-  text-align: center;
-  margin: 25px;
-}
-
 .habilidades {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
   margin: 20px;
-}
-
-.habilidad {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: rgb(60, 49, 225);
-  background: linear-gradient(128deg, rgb(60, 49, 225) 0%, rgb(0, 113, 188) 100%);
-  width: 85vw;
-  height: 280px;
-  border-radius: 20px;
-}
-.habilidad__title {
-  text-align: center;
-  font-size: 1.3rem;
-  font-style: oblique;
-  font-weight: 500;
-  color: white;
-}
-.habilidad__icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-.habilidad__icon {
-  background-color: whitesmoke;
-  width: 80px;
-  height: 80px;
-  border-radius: 50px;
-  margin: 10px;
 }
 
 @media (min-width: 1024px) {
@@ -446,55 +455,12 @@ footer {
   flex-direction: column;
 }
 
-.trabajo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 30px;
-  border-radius: 20px;
-  background: rgb(60, 49, 225);
-  background: linear-gradient(90deg, rgb(60, 49, 225) 0%, rgb(0, 113, 188) 100%);
-  -webkit-box-shadow: 0px 4px 26px -14px rgb(0, 0, 0);
-  -moz-box-shadow: 0px 4px 26px -14px rgb(0, 0, 0);
-  box-shadow: 0px 4px 26px -14px rgb(0, 0, 0);
-}
-.trabajo .foto {
-  background-color: rgb(157, 206, 248);
-  width: 100%;
-  height: 300px;
-  border-radius: 20px;
-}
-.trabajo__categoria {
-  margin: 10px;
-  background-color: #F7931E;
-  padding: 5px 20px;
-  border-radius: 20px;
-}
-.trabajo__title {
-  font-size: 2rem;
-  font-weight: 700;
-}
-.trabajo__text {
-  text-align: center;
-  width: 80vw;
-  padding: 10px;
-}
-
 @media (min-width: 768px) {
   .portfolio {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-  }
-  .trabajo {
-    width: 50vw;
-  }
-  .trabajo__text {
-    text-align: center;
-    width: 30vw;
-    padding: 10px;
   }
 }
 @media (min-width: 1024px) {
@@ -503,14 +469,6 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
-  }
-  .trabajo {
-    width: 30vw;
-  }
-  .trabajo__text {
-    text-align: center;
-    width: 30vw;
-    padding: 10px;
   }
 }
 .contacto__titulo {

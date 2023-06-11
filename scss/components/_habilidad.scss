@@ -1,0 +1,35 @@
+.habilidad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include blue__gradient(128deg);
+    width: 85vw;
+    height: 280px;
+    border-radius: 20px;
+
+    &__title{
+        text-align: center;
+        font-size: 1.3rem;
+        font-style: oblique;
+        font-weight: 500;
+        color: $color-white;
+    }
+
+    &__icons{
+        @include flex__center();
+        margin-top: 20px;
+    }
+
+    &__icon{
+        background-color: whitesmoke;
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        margin: 10px;
+        padding: 10px;
+        object-fit: contain;
+        
+    }
+}

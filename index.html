@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="../img/estrella.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/gqo2vkb.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,8 +23,8 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <nav class="collapse navbar-collapse justify-content-end " id="navbarNav">
-                <ul class="navbar-nav color-white">
+            <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav p-2">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="index.html">inicio</a>
                     </li>
@@ -51,11 +52,7 @@
                 <h1>salomón gonzalvez</h1>
                 <p>desarrollador web y diseñador gráfico</p>
                 <img class="estrella" src="./img/estrella.png" alt="">
-
             </div>
-
-
-
         </section>
 
         <section class="texto-introductorio">
@@ -75,15 +72,11 @@
                 <a class="button" href="">Conoceme más</a>
 
             </div>
-
-
         </section>
-
-
 
         <section class="creaciones">
             <h2>Mis creaciones favoritas</h2>
-            <article class="card">
+            <article class="card" data-aos="fade-right">
                 <div class="foto"></div>
                 <div class="card__text">
                     <p>Diseño gráfico</p>
@@ -96,9 +89,8 @@
                 
             </article>
 
-            <article class="card">
+            <article data-aos="fade-left" class="card">
                 <div class="foto"></div>
-
                 <div class="card__text">
                     <p>Diseño gráfico</p>
                     <hr>
@@ -119,10 +111,7 @@
         <section class="pantalla-contacto">
             <div class="contacto">
                 <h3>¿querés contactarme?</h3>
-                <div class="presiona">
-                    <a href="./pages/contacto.html">presioná acá</a>
-                </div>
-
+                <a class="button blue" href="./pages/contacto.html">presioná acá</a>
             </div>
 
         </section>
@@ -155,7 +144,6 @@
             <a class="footer-skills" href="./pages/skills.html">habilidades</a>
             <a class="footer-portfolio" href="./pages/portfolio.html">portfolio</a>
             <a class="footer-contacto" href="./pages/contacto.html">contacto</a>
-
         </div>
     </footer>
 
@@ -163,6 +151,10 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

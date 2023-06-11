@@ -1,0 +1,81 @@
+footer{
+    @include blue__gradient(120deg);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-partone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & h5{
+        font-size: 1.9rem;
+        font-weight: 600;
+        margin: 0px;
+    }
+
+    & p{
+        width: 75vw;
+        font-size: 1rem;
+    }
+}
+
+.socialmedia{
+    align-self: center;
+
+    & a{
+        background-color: $color-1;
+        color: $color-white;
+        text-decoration: none;
+        border-radius: 30px;
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+.footer-link{
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items :center ;
+
+
+    & a{
+        color: $color-white;
+        font-weight: 500;
+        font-style: italic;
+        text-decoration: none;
+    }
+}
+
+.footer-inicio{
+    grid-column: 2;
+    grid-row:2;
+}
+
+.footer-about{
+    grid-column: 1;
+    grid-row:1;
+}
+
+.footer-skills{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.footer-portfolio{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.footer-contacto{
+    grid-column: 3;
+    grid-row: 3;
+}
