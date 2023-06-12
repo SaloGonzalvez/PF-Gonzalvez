@@ -6,12 +6,8 @@
     border-radius: 10px;
     align-self: center;
     justify-self: center;
-    @include orange__gradient(35deg);
+    @include blue__gradient(35deg);
     transition: 1s;
-
-    & .blue{
-        @include blue__gradient(35deg);
-    }
 }
 
 .button:hover{

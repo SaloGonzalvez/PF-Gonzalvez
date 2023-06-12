@@ -33,7 +33,12 @@ footer{
         border-radius: 30px;
         padding: 10px;
         margin: 10px;
+        transition: 0.6s;
     }
+}
+
+.socialmedia a:hover{
+    color: #ffe1c0;
 }
 
 .footer-link{
@@ -54,6 +59,8 @@ footer{
         text-decoration: none;
     }
 }
+
+
 
 .footer-inicio{
     grid-column: 2;
