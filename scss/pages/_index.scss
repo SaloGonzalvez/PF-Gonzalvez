@@ -15,7 +15,7 @@
     flex-wrap: wrap;
 
     & h1{
-        font-size: 5rem;
+        font-size: 4rem;
         font-weight: 600;
         font-style: oblique;
         margin: 10px auto;
@@ -27,6 +27,15 @@
         font-size: 1.2rem;
     }
 }
+
+@media (min-width:1024px){
+    .texto-central{
+        & h1{
+            font-size: 5rem;
+        }
+    }
+}
+
 
 .texto-introductorio{
     position: relative;
@@ -97,6 +106,40 @@
     }
 }
 
+@media (min-width:768px){
+    .creaciones{
+
+        & .card{
+            width: 75vw;
+            height: 800px;
+            margin: 50px 100px;
+            gap:10px;
+    
+            & .foto{
+                width: 400px;
+                height: 400px;
+            }
+    
+            &__text{
+    
+                & p{
+                    font-size: 1.2rem;
+                }
+    
+                
+            }
+        }
+
+        .button{
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+    }
+        
+}
+
+
 @media (min-width:1024px){
     .creaciones{
 
@@ -104,8 +147,9 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             justify-items: start;
-            width: 75vw;
-            height: 70vh;
+            align-items: center;
+            width: 65vw;
+            height: 66vh;
             margin: 50px 100px;
             gap:10px;
     

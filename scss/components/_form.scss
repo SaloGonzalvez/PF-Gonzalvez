@@ -1,7 +1,7 @@
 .form{
     @include flex__center();
     flex-direction: column;
-    padding: 10px 20px;
+    padding: 10px 30px;
     
 
     &__info{
@@ -79,7 +79,7 @@
 
     .form{
         flex-direction: row;
-        height: 35em;
+        height: 38em;
         margin: 40px 10px;
         
 

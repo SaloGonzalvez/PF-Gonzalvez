@@ -74,7 +74,7 @@ ul {
   -webkit-box-shadow: 3px 13px 47px -22px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 13px 47px -22px rgba(0, 0, 0, 0.75);
   box-shadow: 3px 13px 47px -22px rgba(0, 0, 0, 0.75);
-  height: 100vh;
+  height: 45em;
 }
 .card .foto {
   width: 300px;
@@ -232,7 +232,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 10px 20px;
+  padding: 10px 30px;
 }
 .form__info {
   width: 100%;
@@ -294,7 +294,7 @@ footer {
 @media (min-width: 1024px) {
   .form {
     flex-direction: row;
-    height: 35em;
+    height: 38em;
     margin: 40px 10px;
   }
   .form__info {
@@ -384,7 +384,7 @@ footer {
   flex-wrap: wrap;
 }
 .texto-central h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 600;
   font-style: oblique;
   margin: 10px auto;
@@ -395,6 +395,11 @@ footer {
   font-size: 1.2rem;
 }
 
+@media (min-width: 1024px) {
+  .texto-central h1 {
+    font-size: 5rem;
+  }
+}
 .texto-introductorio {
   position: relative;
 }
@@ -462,13 +467,33 @@ footer {
   margin: 40px auto;
 }
 
+@media (min-width: 768px) {
+  .creaciones .card {
+    width: 75vw;
+    height: 800px;
+    margin: 50px 100px;
+    gap: 10px;
+  }
+  .creaciones .card .foto {
+    width: 400px;
+    height: 400px;
+  }
+  .creaciones .card__text p {
+    font-size: 1.2rem;
+  }
+  .creaciones .button {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
 @media (min-width: 1024px) {
   .creaciones .card {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: start;
-    width: 75vw;
-    height: 70vh;
+    align-items: center;
+    width: 65vw;
+    height: 66vh;
     margin: 50px 100px;
     gap: 10px;
   }
