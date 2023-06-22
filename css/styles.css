@@ -41,6 +41,10 @@ li {
   height: 650px;
   z-index: 1;
 }
+.estrella__azul {
+  width: 350px;
+  height: 350px;
+}
 
 .bg-gradient-blue {
   background: rgb(60, 49, 225);
@@ -114,7 +118,7 @@ li {
 
 footer {
   background: rgb(60, 49, 225);
-  background: linear-gradient(120deg, rgb(60, 49, 225) 0%, rgb(0, 113, 188) 100%);
+  background: linear-gradient(87deg, rgb(60, 49, 225) 0%, rgb(0, 113, 188) 100%);
   color: white;
   padding: 20px;
   display: flex;
@@ -247,6 +251,9 @@ footer {
   width: 200px;
   border-radius: 15px;
   object-fit: cover;
+  -webkit-box-shadow: -1px 3px 18px -14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 3px 18px -14px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 3px 18px -14px rgba(0, 0, 0, 0.75);
 }
 
 .form {
@@ -275,6 +282,17 @@ footer {
 .form__info__text {
   font-weight: 400;
   font-size: 1.15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form__info__text i {
+  padding: 20px;
+  transform: scale(1.2);
+}
+.form__info__text p {
+  margin-bottom: 0;
+  padding: 20px;
 }
 .form__contacto {
   width: 100%;
@@ -326,6 +344,8 @@ footer {
   }
   .form__info__text {
     margin-bottom: 60px;
+    justify-content: start;
+    font-size: 1.225rem;
   }
   .form__contacto {
     display: grid;

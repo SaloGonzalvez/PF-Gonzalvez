@@ -59,8 +59,12 @@ li{
     position:absolute;
     width: 650px;
     height: 650px;
-   
     z-index: 1;
+
+    &__azul{
+        width: 350px;
+        height: 350px;
+    }
 }
 
 .bg-gradient-blue{

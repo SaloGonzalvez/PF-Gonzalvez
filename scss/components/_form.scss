@@ -23,7 +23,19 @@
         &__text{
             font-weight: 400;
             font-size: 1.15rem;
+            display: flex;
+            justify-content:center;
+            align-items: center;
             
+            & i{
+                padding: 20px;
+                transform:scale(1.2);
+            }
+
+            & p{
+                margin-bottom: 0;
+                padding: 20px;
+            }
         }
     }
 
@@ -90,6 +102,8 @@
 
             &__text{
                 margin-bottom: 60px;
+                justify-content: start;
+                font-size: 1.225rem;
             }
         }
 
