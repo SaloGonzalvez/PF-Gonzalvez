@@ -3,6 +3,15 @@
     flex-direction: column;
 }
 
+@media (min-width:500px){
+    .card{
+        & .foto{
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
+
 @media (min-width:768px){
 
     .portfolio{
@@ -10,6 +19,14 @@
         grid-template-columns: 1fr 1fr;
         justify-content: center;
         align-items: center;
+    }
+
+    .card{
+
+        & .foto{
+            width: 320px;
+            height: 320px;
+        }
     }
 }
 
@@ -21,4 +38,6 @@
         justify-content: center;
         align-items: center;
     }
+
+    
 }

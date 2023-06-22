@@ -22,8 +22,7 @@
     & hr{
         border: none;
         height: 5px;
-        color: $color-white;
-        background-color: $color-white;
+        background-color: #ff8800;
     }
 
     & h2{
@@ -77,7 +76,7 @@
         & p{
             text-align: left;
             align-self: baseline;
-            width: 450px;
+            width: 35vw;
         }
     }
 }

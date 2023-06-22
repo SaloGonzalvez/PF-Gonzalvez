@@ -23,6 +23,21 @@ footer{
     }
 }
 
+@media (min-width:768px){
+    .footer-partone{
+
+        & h5{
+            align-self: center;
+            margin-bottom: 20px;
+        }
+
+        & p{
+            align-self: center;
+            text-align: center;
+        }
+    }
+}
+
 .socialmedia{
     align-self: center;
 
